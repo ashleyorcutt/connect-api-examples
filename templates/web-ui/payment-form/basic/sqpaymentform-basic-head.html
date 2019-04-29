@@ -6,7 +6,50 @@
     <!-- link to the local SqPaymentForm initialization -->
     <script type="text/javascript" src="path/to/sqpaymentform.js">
     </script>
-
+    <div id="form-container">
+   ...
+</div> <!-- end #form-container -->
+    
     <!-- link to the custom styles for SqPaymentForm -->
     <link rel="stylesheet" type="text/css" href="path/to/sqpaymentform.css">
 </head>
+// Set the application ID
+
+var applicationId = "sandbox-sq0idp-SXkXLf3WQ8rX82Udvlyl4g";
+
+
+// Set the location ID
+
+var locationId = "CBASECqQCvR4MOTpYCduNlQgiXQgAQ";
+
+
+// Create and initialize a payment form object
+
+var paymentForm = new SqPaymentForm({
+
+  ...
+
+});
+<div id="sq-ccbox">
+
+  <!--
+
+  -->
+
+  <form id="nonce-form" <button id="sq-masterpass" class="button-masterpass"></button>" method="post">
+
+    Pay with a Credit Card
+
+
+    ...
+
+
+    <!--
+
+     -->
+
+    <input type="hidden" id="card-nonce" name="nonce">
+
+  </form>
+
+</div>
